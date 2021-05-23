@@ -84,10 +84,10 @@ class LcdThread(threading.Thread):
                 squawk = ""
 
             lines = {
-                LCD_LINE_1: '{}'.format(flight['callsign'].center(self.width)),
+                LCD_LINE_1: '{}'.format(squawk.center(self.width)),
                 LCD_LINE_2: altLine,
                 LCD_LINE_3: '{}'.format(type.center(self.width)),
-                LCD_LINE_4: '{}'.format(squawk.center(self.width))
+                LCD_LINE_4: '{}'.format(flight['callsign'].center(self.width))
             }
             self.backlight = LCD_BACKLIGHT_ON
         else:
