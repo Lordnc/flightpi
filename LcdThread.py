@@ -1,8 +1,9 @@
 """
 LcdThread.py
-Accepts details of a flight to display, and outputs them to an LCD
+Accepts details of a flight to display, and outputs them to an LCD.
 
 Inspiration taken from https://www.raspberrypi-spy.co.uk/2015/05/using-an-i2c-enabled-lcd-screen-with-the-raspberry-pi/
+
 
 Matt Dyson
 13/02/18
