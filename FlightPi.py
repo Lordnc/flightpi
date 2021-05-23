@@ -87,6 +87,10 @@ class FlightPi:
                 # We have a new favourite
                 lowest = a
 
+            if(msg.groundSpeed is not None):
+                self.aircraft[msg.icao24]['groundSpeed'] = msg.groundSpeed
+               # Makes sure, that we don't get stuck with the Test123 callsign
+
         if(lowest != self.display):
             if(lowest is not None):
                 self.display = dict(lowest) # Take a copy rather than a reference
